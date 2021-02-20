@@ -72,18 +72,18 @@ article {
 
 article h2 {
     flex: 1;
-    padding-right: 2%;
-    justify-content: center;
     text-align: right;
     font-size: 300%;
-    border-right: 5px solid black;
-    width: fit-content;
+    border-right: 5px solid #92cccd;
+    padding-right: 2%;
+    justify-content: center;
+    margin-left: 2.5%;
 }
 
 article p {
     flex: 4;
-    font-size: 150%;
-    padding: 10px 10px 10px 3%;
+    font-size: 100%;
+    padding: 10px 10% 10px 3%;
 } 
 
 main{
@@ -93,25 +93,23 @@ main{
 }
 main h2 {
     flex: 1;
-    max-width: 25%;
     text-align: right;
     font-size: 300%;
-    border-right: 5px solid black;
+    border-right: 5px solid #92cccd;
     padding-right: 2%;
     padding-bottom: 20%;
-    text-align: right;
 }
 
 .projects{
     flex: 4;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     padding-left: 3%;
  }
 .card1 {
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
-    flex: 0 1 100%;
+    flex: 0 1 90%;
     background-image: url(../images/02-portfolio-1.jpg);
     margin-bottom: 1%;
     margin-right: 1%;
@@ -122,7 +120,6 @@ main h2 {
 
 .card1 h3{
     flex: 0;
-    max-width: 15%;
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
@@ -131,7 +128,7 @@ main h2 {
 .card2{
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
-    flex: 0 0 48%;
+    flex: 40%;
     margin: 1%;
     height: 15em;
     background-image: url(../images/02-portfolio-2.jpg);
@@ -140,7 +137,6 @@ main h2 {
  } 
  .card2 h3{
     flex: 0;
-    max-width: 22%;
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
@@ -149,8 +145,8 @@ main h2 {
  .card3{
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
-    flex: 0 0 48%;
-    margin: 1%;
+    flex: 40%;
+    margin: 1% 10% 0 0;
     height: 15em;
     background-image: url(../images/02-portfolio-3.jpg);
     background-repeat: no-repeat;
@@ -158,7 +154,6 @@ main h2 {
  } 
  .card3 h3{
     flex: 0;
-    max-width: 22%;
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
@@ -167,7 +162,7 @@ main h2 {
  .card4{
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
-    flex: 0 0 48%;
+    flex: 40%;
     margin: 1%;
     height: 15em;
     background-image: url(../images/02-portfolio-4.jpg);
@@ -176,7 +171,6 @@ main h2 {
  }
  .card4 h3{
     flex: 0;
-    max-width: 22%;
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
@@ -185,8 +179,8 @@ main h2 {
  .card5{
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
-    flex: 0 0 48%;
-    margin: 1%;
+    flex: 40%;
+    margin: 1% 10% 0 0;
     height: 15em;
     background-image: url(../images/02-run-buddy.jpg);
     background-repeat: no-repeat;
@@ -194,7 +188,6 @@ main h2 {
  } 
  .card5 h3{
     flex: 0;
-    max-width: 22%;
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
@@ -212,7 +205,7 @@ main h2 {
     justify-content: center;
     text-align: right;
     font-size: 300%;
-    border-right: 5px solid black;
+    border-right: 5px solid #92cccd;
     width: fit-content;
  }
 
@@ -230,3 +223,17 @@ main h2 {
     text-decoration: underline;
     color: black;
  }
+ 
+ @media screen and (max-width:992px) {
+    .card2, .card3, .card4, .card5 {
+        flex: 100%;
+    }
+    article p {
+        font-size: 80%;
+    }
+    .card2, .card4 {
+        margin: 1% 10% 0 0;
+    }
+  }
+
+  
