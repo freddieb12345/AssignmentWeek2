@@ -89,6 +89,7 @@ article p {
 main{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1%;
 }
 main h2 {
     flex: 1;
@@ -199,3 +200,33 @@ main h2 {
     padding: 0;
  }
 
+ footer{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+ }
+
+ footer h2 {
+    flex: 1;
+    padding-right: 2%;
+    justify-content: center;
+    text-align: right;
+    font-size: 300%;
+    border-right: 5px solid black;
+    width: fit-content;
+ }
+
+ footer ul {
+    flex: 4;
+    font-size: 150%;
+    padding: 10px 10px 10px 3%;
+    justify-content: space-evenly;
+ }
+ 
+ footer ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding: 6%;
+    text-decoration: underline;
+    color: black;
+ }
