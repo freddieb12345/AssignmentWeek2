@@ -1,27 +1,30 @@
-*{ 
+*{ /* Selects all elements */
     box-sizing:border-box;
     padding: 0;
     margin: 0;
 } 
 
-body{
-    background-color:white ;
+
+body { /* Sets background color */
+    background-color:white;
 }
 
 header { /* Fomats Header */
-    padding: 20px 20px 20px 0px;
+    padding: 5px 20px 15px 0px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #2a607c;
+    background-color: #31343d;
     color: black;
 }
 
 header h1 { /* Formats header and h1 to be on the same line and have the same font size of 48px */
     display: inline-block;
     font-size: 48px;
-    background-color: teal;
+    background-color: #92cccd;
     margin-left: 0;
     padding-left: 0;
     color: black;
+    width: 25%;
+    text-align: center;
 }
 
 
@@ -37,12 +40,162 @@ header row ul { /* Gets rid of the bullet points in the list element */
     list-style-type: none;
 }
 
+header row ul li{
+    text-decoration: underline;
+}
+
 header row ul li { /* Aligns all of the header links onto one line */
     display: inline-block;
     margin-left: 25px;
 }
 
 a { /* Formatting text of header links */
-    color: black;
+    color: #92cccd;
     text-decoration: none;
 }
+
+.MainPicture { /* Formatting the Main picture on the webpage */
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/02-hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+
+}
+
+article h2 {
+    flex: 1;
+    padding-right: 2%;
+    justify-content: center;
+    text-align: right;
+    font-size: 300%;
+    border-right: 5px solid black;
+    width: fit-content;
+}
+
+article p {
+    flex: 4;
+    font-size: 150%;
+    padding: 10px 10px 10px 3%;
+} 
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main h2 {
+    flex: 1;
+    max-width: 25%;
+    text-align: right;
+    font-size: 300%;
+    border-right: 5px solid black;
+    padding-right: 2%;
+    padding-bottom: 20%;
+    text-align: right;
+}
+
+.projects{
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+ }
+.card1 {
+    border: 5px solid #92cccd;
+    padding: 1% 0 0 0;
+    flex: 0 1 100%;
+    background-image: url(../images/02-portfolio-1.jpg);
+    margin-bottom: 1%;
+    margin-right: 1%;
+    height: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+.card1 h3{
+    flex: 0;
+    max-width: 15%;
+    font-size: 200%;
+    background-color: #92cccd;
+    padding: 0;
+ }
+
+.card2{
+    border: 5px solid #92cccd;
+    padding: 1% 0 0 0;
+    flex: 0 0 48%;
+    margin: 1%;
+    height: 15em;
+    background-image: url(../images/02-portfolio-2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+ } 
+ .card2 h3{
+    flex: 0;
+    max-width: 22%;
+    font-size: 200%;
+    background-color: #92cccd;
+    padding: 0;
+ }
+ 
+ .card3{
+    border: 5px solid #92cccd;
+    padding: 1% 0 0 0;
+    flex: 0 0 48%;
+    margin: 1%;
+    height: 15em;
+    background-image: url(../images/02-portfolio-3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+ } 
+ .card3 h3{
+    flex: 0;
+    max-width: 22%;
+    font-size: 200%;
+    background-color: #92cccd;
+    padding: 0;
+ }
+
+ .card4{
+    border: 5px solid #92cccd;
+    padding: 1% 0 0 0;
+    flex: 0 0 48%;
+    margin: 1%;
+    height: 15em;
+    background-image: url(../images/02-portfolio-4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+ }
+ .card4 h3{
+    flex: 0;
+    max-width: 22%;
+    font-size: 200%;
+    background-color: #92cccd;
+    padding: 0;
+ }
+
+ .card5{
+    border: 5px solid #92cccd;
+    padding: 1% 0 0 0;
+    flex: 0 0 48%;
+    margin: 1%;
+    height: 15em;
+    background-image: url(../images/02-run-buddy.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+ } 
+ .card5 h3{
+    flex: 0;
+    max-width: 22%;
+    font-size: 200%;
+    background-color: #92cccd;
+    padding: 0;
+ }
+
