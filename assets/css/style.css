@@ -105,7 +105,7 @@ main h2 { /* Formats the work header */
     display: flex;
     flex-wrap: wrap; 
     padding-left: 3%;
- }
+}
 .card1 { /* Creates project 1 card */
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
@@ -117,126 +117,70 @@ main h2 { /* Formats the work header */
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
- }
+}
  
- .card1:hover{ /* Increases the size of card1 when hovered over */
-     transform:scale(1.05);
- }
-
 .card1 h3{  /* Formats header of project 1 */
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
     margin-right: 80%;
     color: black;
- }
+}
 
-.card2{/* Creates project 2 card */
+.card2, .card3, .card4, .card5 {/* Creates project 2 card */
     border: 5px solid #92cccd;
     padding: 1% 0 0 0;
     flex: 40%;
-    margin: 1% 1% 1% 0;
     height: 15em;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: block;
+} 
+
+.card2, .card4{
+    margin: 1% 1% 1% 0;
+}
+.card3, .card5{ /* Creates project 3 card */
+    margin: 1% 10% 1% 0;
+}
+.card2 {
     background-image: url(../images/02-portfolio-2.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: block;
- } 
-
- .card2:hover{ /* Increases the size of card1 when hovered over */
-    transform:scale(1.05);
 }
-
- .card2 h3{ /* Formats header of project 2 */
-    flex: 0;
-    font-size: 200%;
-    background-color: #92cccd;
-    padding: 0;
-    margin-right: 60%;
-    color: black;
- }
- 
- .card3{ /* Creates project 3 card */
-    border: 5px solid #92cccd;
-    padding: 1% 0 0 0;
-    flex: 40%;
-    margin: 1% 10% 1% 0;
-    height: 15em;
+.card3 {
     background-image: url(../images/02-portfolio-3.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: block;
- } 
-
- .card3:hover{ /* Increases the size of card1 when hovered over */
-    transform:scale(1.05);
 }
-
- .card3 h3{ /* Formats header of project 3 */
-    flex: 0;
+.card4 {
+    background-image: url(../images/02-portfolio-4.jpg); 
+}
+.card5 {
+    background-image: url(../images/02-run-buddy.jpg);  
+}
+  
+.card2 h3, .card3 h3, .card4 h3, .card5 h3{ /* Formats header of project 2 */
     font-size: 200%;
     background-color: #92cccd;
     padding: 0;
-    margin-right: 60%;
     color: black;
- }
-
- .card4{ /* Creates project 4 card */
-    border: 5px solid #92cccd;
-    padding: 1% 0 0 0;
-    flex: 40%;
-    margin: 1% 1% 1% 0;
-    height: 15em;
-    background-image: url(../images/02-portfolio-4.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: block;
- }
-
- .card4:hover{ /* Increases the size of card1 when hovered over */
-    transform:scale(1.05);
 }
 
- .card4 h3{ /* Formats header of project 4 */
-    flex: 0;
-    font-size: 200%;
-    background-color: #92cccd;
-    padding: 0;
+.card2 h3, .card3 h3, .card4 h3, .card5 h3 {
     margin-right: 60%;
-    color: black;
- }
-
- .card5{ /* Creates project 5 card */
-    border: 5px solid #92cccd;
-    padding: 1% 0 0 0;
-    flex: 40%;
-    margin: 1% 10% 1% 0;
-    height: 15em;
-    background-image: url(../images/02-run-buddy.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: block;
- } 
-
- .card5:hover{ /* Increases the size of card1 when hovered over */
-    transform:scale(1.05);
 }
 
- .card5 h3{ /* Formats header of project 5 */
-    flex: 0;
-    font-size: 200%;
-    background-color: #92cccd;
-    padding: 0;
-    margin-right: 60%;
-    color: black
- }
+.card1 h3 {
+    margin-right: 80%;
+}
+
+ .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover{ /* Increases the size of cards when hovered over */
+     transform:scale(1.05);
+}
 
  footer{ /* Formatting footer */
     display: flex;
     flex-direction: row;
     padding-bottom: 30px;
     
- }
+}
 
  footer h2 { /* Formatting header of footer */
     flex: 1;
@@ -246,7 +190,7 @@ main h2 { /* Formats the work header */
     font-size: 300%;
     border-right: 5px solid #92cccd;
     width: fit-content;
- }
+}
 
  footer ul { /* Formatting list in footer */
     flex: 4;
