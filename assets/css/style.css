@@ -62,20 +62,30 @@ header row ul li a { /* Formatting text of header links */
     background-position: center;
 }
 
+.face {
+    height: 90%;
+    padding-top: 1%;
+    padding-top: 1%;
+}
+
 article { /* Changes this section to a flex section */
     display: flex;
     flex-direction: row;
     padding-bottom: 30px;
+    max-height: 145px;
 }
 
-article h2 { /* Creating the about me header on the left side of the page */
+article h2, main h2, footer h2 { /* Creating the about me header on the left side of the page */
     flex: 1;
     text-align: right;
-    font-size: 300%;
+    font-size: 200%;
     border-right: 5px solid #92cccd; /* Creates border line between the header and the projects */
     padding-right: 2%;
-    justify-content: center;
-    margin-left: 2.5%;
+
+}
+
+article h2 {
+   margin-left: 2.5%; 
 }
 
 article p {/* Formats the text for the about me section */
@@ -88,14 +98,6 @@ main{ /* Creates main section containing the the projects */
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1%;
-}
-main h2 { /* Formats the work header */
-    flex: 1;
-    text-align: right;
-    font-size: 300%;
-    border-right: 5px solid #92cccd;
-    padding-right: 2%;
-    padding-bottom: 20%;
 }
 
 .projects{ /* Creates flex element for all the projects */
@@ -122,7 +124,7 @@ main h2 { /* Formats the work header */
     border-radius: 1em;
     padding: 1% 0 0 0;
     flex: 1 1 40%;
-    height: 15em;
+    height: 12.5em;
     background-repeat: no-repeat;
     background-size:cover;
     display: block;
@@ -183,16 +185,6 @@ footer{ /* Formatting footer */
     
 }
 
- footer h2 { /* Formatting header of footer */
-    flex: 1;
-    padding-right: 2%;
-    justify-content: center;
-    text-align: right;
-    font-size: 300%;
-    border-right: 5px solid #92cccd;
-    width: fit-content;
-}
-
  footer ul { /* Formatting list in footer */
     flex: 4;
     font-size: 150%;
@@ -220,19 +212,33 @@ footer{ /* Formatting footer */
      color: black;
  }
  
- @media screen and (max-width:992px) { /* Creates responsive layout when max width is blow 992px */
+ @media screen and (max-width:763px) { /* Creates responsive layout when max width is blow 992px */
     .LeftCards, .RightCards { /* Makes all the projects take up 100% of the width of the page*/
         flex: 100%;
-    }
-    article p { /* makes font size of the about me section smaller */
-        font-size: 80%;
     }
     .LeftCards { /* Changes the right margin of leftCards to better match RightCards in new responsive layout*/
         margin: 0.2% 10% 0 0;
     }
-    .LeftCards h3, .RightCards h3,{
+    .LeftCards h3, .RightCards h3 {
         margin-right: 80%; /* Changes right margin of the header within RightCards and LeftCards to better match card1 in new responsive layout */
+    }
+    article h2, main h2, footer h2 {
+        font-size: 1em;
+    } 
+    .LeftCards h3, .RightCards h3, .card1 h3{
+        font-size: 1em;
     }
   }
 
+  @media screen and (max-width:964px) {
+    article h2, main h2, footer h2 {
+        font-size: 200%;
+    } 
+    .LeftCards h3, .RightCards h3, .card1 h3{
+        font-size: 1em;
+    }
+    .card1 {
+        height: 12.5em;
+    }
+  }
   
