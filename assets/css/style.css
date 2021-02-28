@@ -148,6 +148,10 @@ main{ /* Creates main section containing the the projects */
     text-decoration-color: #92cccd;
 }
 
+.ProjectTopic {
+    font-size: 60%;
+}
+
 .card1 h3{
     margin-right: 80%;
 }
@@ -158,7 +162,7 @@ main{ /* Creates main section containing the the projects */
 
 /* Formats the background images of all the elements */
 #card1Img {
-    background-image: url(../images/02-portfolio-1.jpg);
+    background-image: url(../images/RockPaperScissors.png);
 }
 #card2Img {
     background-image: url(../images/02-portfolio-2.jpg);
