@@ -166,19 +166,19 @@ main{ /* Creates main section containing the the projects */
 
 /* Formats the background images of all the elements */
 #card1Img {
-    background-image: url(../images/RockPaperScissors.png);
+    background-image: url(../images/4907599.jpg);
 }
 #card2Img {
-    background-image: url(../images/02-portfolio-2.jpg);
+    background-image: url(../images/weather.jpg);
 }
 #card3Img {
-    background-image: url(../images/02-portfolio-3.jpg);
+    background-image: url(../images/calendar.jpg);
 }
 #card4Img {
-    background-image: url(../images/02-portfolio-4.jpg);
+    background-image: url(../images/RockPaperScissors.png);
 }
 #card5Img {
-    background-image: url(../images/02-run-buddy.jpg);
+    background-image: url(../images/Quiz.png);
 }
 
 .card1:hover, .RightCards:hover, .LeftCards:hover{ /* Increases the size of cards when hovered over */
@@ -195,7 +195,7 @@ footer{ /* Formatting footer */
 
  footer ul { /* Formatting list in footer */
     flex: 4;
-    font-size: 3vw;
+    font-size: 1vw;
     padding: 10px 10px 10px 3%;
     justify-content: space-evenly;
  }
